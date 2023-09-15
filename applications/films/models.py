@@ -55,7 +55,7 @@ class Rating(models.Model):
 
     rating = models.PositiveSmallIntegerField(validators=[
         MinValueValidator(1),
-        MaxValueValidator(2),
+        MaxValueValidator(5),
     ], blank=True, null=True)
 
     def __str__(self):
